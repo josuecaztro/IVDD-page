@@ -1,7 +1,7 @@
 body {
     padding: 0px;
     margin: 0px;
-    background-color:rgb(169, 188, 194);
+    background-color:rgb(221, 233, 236);
 }
 
 #main-body {
@@ -32,13 +32,13 @@ body {
 #homepage-img {
     height: auto;
     width: 500px;
-    border: 5px solid rgb(31, 61, 70);
+    border: 2.5px solid rgb(31, 61, 70);
     border-radius: 5px;
 }
 
 #nav-bar-div {
     display: flex;
-    background-color: rgb(81, 95, 142);
+    background-color: rgb(90, 150, 168);
     padding: 20px;
     justify-content: space-around;
 }
@@ -59,14 +59,14 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(60, 71, 106);
-    color: grey;
+    background-color: rgb(90, 150, 168);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
 #three-part-section {
     display:flex;
-    background-color: rgb(191, 208, 214);
+    background-color: rgb(181, 205, 212);
     width: 100%;
     align-items: center;
     justify-content: space-around;
@@ -77,7 +77,10 @@ body {
 
 
 #section-two {
+    display: flex;
+    gap: 5px;
     text-align: center;
+    align-items: center;
 }
 
 #youtube-div {
@@ -85,5 +88,70 @@ body {
     padding-bottom: 150px;
     text-align: center;
 }
+
+.prev-button {
+    width: 0;
+    height: 0;
+    border-top: 12.5px solid transparent;
+    border-right: 25px solid #b4b4b4;
+    border-bottom: 12.5px solid transparent;
+    transition: transform 0.2s;
+}
+
+.prev-button:active {
+    border-right: 25px solid #d3d3d3;
+}
+
+.next-button {
+    width: 0;
+    height: 0;
+    border-top: 12.5px solid transparent;
+    border-left: 25px solid #b4b4b4;
+    border-bottom: 12.5px solid transparent;
+    transition: transform 0.2s;
+}
+
+.next-button:active {
+    border-left: 25px solid #d3d3d3;
+}
+
+.prev-button:hover {
+    transform: scale(1.35);
+}
+
+.next-button:hover {
+    transform: scale(1.35);
+}
+
+.visible {
+    height: 250px;
+    width: 400px;
+    border: 5px solid rgb(31, 61, 70);
+    border-radius: 5px;
+}
+
+.invisible {
+    display: none;
+}
+
+#section-one a {
+    color: rgb(31, 61, 70);
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#section-one a:hover {
+    background-color: rgb(152, 173, 180);
+}
+
+img {
+    user-select: none;
+}
+
+
+
+
+
 
 
